@@ -1,0 +1,116 @@
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L'Équipe</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="btn btn-danger" href="#">Voir les directs</a>
+        <a class="navbar-brand" href="#">
+          <img
+            src="img/logo.png"
+            width="100"
+            height="30"
+            class="d-inline-block align-top"
+            alt="logo"
+          />
+        </a>
+        <div class="ml-auto">
+          <button class="btn btn-primary btn-yellow mr-2" type="button">
+            Je m'abonne à L'Équipe
+          </button>
+          <button class="btn btn-outline-light" type="button">
+            Se connecter
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="section section__chatbot">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-9">
+          </div>
+          <div class="col-md-3">
+            <div class="chatbot-container">
+              <div class="chat-container" id="chat-container">
+                <div class="chat-message">
+                  Bonjour ! Je suis un chatbot. Comment puis-je vous aider ?
+                </div>
+                <div class="chat-message">
+                  Choisissez une catégorie de sport pour poser une question.
+                </div>
+                <div class="button-container">
+                  <button
+                    type="button"
+                    class="btn btn-primary chat-button"
+                    onclick="sendSport('Rugby')"
+                  >
+                    Rugby
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary chat-button"
+                    onclick="sendSport('Football')"
+                  >
+                    Football
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary chat-button"
+                    onclick="sendSport('Tennis')"
+                  >
+                    Tennis
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary chat-button"
+                    onclick="sendSport('Volley')"
+                  >
+                    Volley
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary chat-button"
+                    onclick="sendSport('Cyclisme')"
+                  >
+                    Cyclisme
+                  </button>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="form-control mt-3"
+                    placeholder="Entrez votre question"
+                    id="question-input"
+                  />
+                  <button
+                    type="button"
+                    class="btn btn-primary mt-3"
+                    onclick="sendMessage()"
+                  >
+                    Envoyer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>

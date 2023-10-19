@@ -1,0 +1,35 @@
+.chatbot-container {
+   position: fixed;
+   top: 50%;
+   right: 0;
+   transform: translate(0, -50%);
+   width: 300px;
+   padding: 20px;
+   background-color: #333;
+   border: 1px solid #ddd;
+}
+
+.chat-message {
+   background-color: #f1f1f1;
+   border-radius: 5px;
+   padding: 10px;
+   margin-bottom: 10px;
+}
+
+.button-container {
+   display: flex;
+   flex-direction: column;
+}
+
+.chat-button {
+   margin-bottom: 10px;
+   background-color: #dc3545;
+   color: #fff;
+   border: none;
+}
+
+.btn-primary {
+   background-color: #dc3545;
+   color: #fff;
+   border: none;
+}
